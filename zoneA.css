@@ -33,7 +33,7 @@ body{
 #wallet {
     position: absolute;
     color: white;
-    background: linear-gradient(90deg, rgb(29, 78, 168), rgb(0, 41, 191), rgba(2, 0, 24, 0.541));
+    background: linear-gradient(112deg, rgb(13 44 101), rgb(0, 41, 191), rgb(46 128 255), rgb(0, 41, 191), rgb(10 2 95), rgba(2, 0, 24, 0.541));
     left: 87vw;
     top: 2vw;
     border-style: none;
@@ -51,10 +51,10 @@ body{
 #msg1 {
     position: absolute;
     display: flex;
-    color: rgba(255, 255, 255, 0.902);
+    color: rgb(255 255 255 / 90%);
     font-family: sans-serif;
-    font-size: 2vw;
-    background-color: rgba(0, 0, 83, 0.631);
+    font-size: 1.4vw;
+    background: linear-gradient(346deg, #00007940, #0d0d5bbd, #0e0a93a3, #5d6afeb3, #000079, #0a025dd6);
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,6 @@ body{
     text-shadow: 0vw 0vw 1vw rgb(0, 0, 0);
     letter-spacing: 2px;
     box-shadow: 0vw 0vw 1vw rgba(0, 0, 83, 0.731);
-
 }
 
 #msg2 {
