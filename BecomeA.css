@@ -170,22 +170,25 @@ body{
 
 } .ans3:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 
-#back{
-   position: absolute;
-   display: none;
+#back {
+    position: absolute;
+    display: none;
     left: 1vw;
-    bottom: 1vw; 
+    bottom: 1vw;
     width: 13vw;
     height: auto;
     padding: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    background-color: rgb(50, 0, 0);
+    background-color: rgb(166 0 0);
     color: white;
-    border-radius: 1vw;
-    font-size: 1.7vw;
+    border-radius: 1vw 0vw 0vw 1vw;
+    font-size: 1.5vw;
     text-align: left;
-
+    border-style: none;
+    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    font-weight: 800;
+    text-shadow: 0vw 0vw 1vw rgb(0 0 0);
 } #back:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 
 #next{
@@ -200,9 +203,13 @@ body{
     padding-right: 2vw;
     background-color: rgb(3, 0, 50);
     color: white;
-    border-radius: 1vw;
-    font-size: 1.7vw;
+    border-radius: 0vw 1vw 1vw 0vw;
+    font-size: 1.5vw;
     text-align: right;
+    border-style: none;
+    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    font-weight: 800;
+    text-shadow: 0vw 0vw 1vw rgb(0 0 0);
 
 } #next:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 
