@@ -118,21 +118,21 @@ body{
     top: 1vw;
 }
 
-.ans1{
-   position: absolute;
+.ans1 {
+    position: absolute;
     left: 1vw;
-    top: 10vw; 
+    top: 10vw;
     width: 45vw;
     height: auto;
     padding: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    background-color: black;
+    background: linear-gradient(271deg, transparent, #000462, #000462, #5f86dc, #000462);
     color: white;
-    border-radius: 1vw;
-    font-size: 1.7vw;
+    border-radius: 2vw 0vw 0vw 2vw;
+    font-size: 1.5vw;
     text-align: justify;
-
+    border-style: none;
 } .ans1:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 .ans1:active{background-color: rgb(117, 149, 244);}
 
@@ -145,10 +145,10 @@ body{
     padding: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    background-color: black;
+    background: linear-gradient(271deg, transparent, #000462, #000462, #5f86dc, #000462);
     color: white;
-    border-radius: 1vw;
-    font-size: 1.7vw;
+    border-radius: 2vw 0vw 0vw 2vw;
+    font-size: 1.5vw;
     text-align: justify;
 
 } .ans2:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
@@ -162,10 +162,10 @@ body{
     padding: 1vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    background-color: black;
+    background: linear-gradient(271deg, transparent, #000462, #000462, #5f86dc, #000462);
     color: white;
-    border-radius: 1vw;
-    font-size: 1.7vw;
+    border-radius: 2vw 0vw 0vw 2vw;
+    font-size: 1.5vw;
     text-align: justify;
 
 } .ans3:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
