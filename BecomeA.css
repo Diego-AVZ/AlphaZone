@@ -150,6 +150,7 @@ body{
     border-radius: 2vw 0vw 0vw 2vw;
     font-size: 1.5vw;
     text-align: justify;
+    border-style: none;
 
 } .ans2:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 
@@ -167,6 +168,7 @@ body{
     border-radius: 2vw 0vw 0vw 2vw;
     font-size: 1.5vw;
     text-align: justify;
+    border-style: none;
 
 } .ans3:hover{cursor: pointer; background-color: rgb(37, 37, 37);}
 
