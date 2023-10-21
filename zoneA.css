@@ -1,3 +1,24 @@
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 0.65vw; 
+}
+
+/* Estilos para el riel de la barra */
+::-webkit-scrollbar-track {
+  background-color: hwb(0 0% 100% / 0); /* Color de fondo del riel */
+}
+
+/* Estilos para el pulgar de la barra */
+::-webkit-scrollbar-thumb {
+  background-color: #636363b2; /* Color del pulgar */
+  border-radius: 1vw; /* Borde redondeado del pulgar */
+}
+
+/* Estilos para el pulgar cuando se desplaza */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #696968b2; /* Color del pulgar al pasar el cursor */
+}
+
 @media (max-width: 1800px) {
 body{
     overflow: hidden;
@@ -54,7 +75,7 @@ body{
     color: rgb(255 255 255 / 90%);
     font-family: sans-serif;
     font-size: 1.4vw;
-    background: linear-gradient(346deg, #00007940, #0d0d5bbd, #0e0a93a3, #5d6afeb3, #000079, #0a025dd6);
+    background: linear-gradient(39deg, rgba(13, 44, 101, 0.50), rgb(0, 41, 191, 0.50), rgb(46, 128, 255, 0.50), rgb(0, 41, 191, 0.50), rgb(10, 2, 95, 0.50), rgba(2, 0, 24, 0.5));
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -66,7 +87,7 @@ body{
     height: 10vw;
     text-shadow: 0vw 0vw 1vw rgb(0, 0, 0);
     letter-spacing: 2px;
-    box-shadow: 0vw 0vw 1vw rgba(0, 0, 83, 0.731);
+    z-index: 3;
 }
 
 #msg2 {
@@ -90,6 +111,7 @@ body{
     padding: 1vw;
     padding-top: 2vw;
     padding-bottom: 3vw;
+    z-index: 3;
 
 }
 
@@ -112,7 +134,495 @@ body{
 
 } #toForm:hover{ cursor: pointer; transition: ease-in, 0.4s; letter-spacing: 1px; opacity:0.9; width: 20.5vw; background: linear-gradient(136deg, black, #546ea1, black);}
 
+#aphaZoneDiv {
+    position: absolute;
+    width: 96vw;
+    height: 80vh;
+    bottom: 1vw;
+    color: rgb(140, 140, 140);
+    background-color: #080808;
+    transform: translateX(-50%);
+    left: 50%;
+    box-shadow: 0vw 0vw 1vw rgb(76 76 76 / 69%);
+    border-radius: 1vw;
+    padding: 1vw;
+    z-index: 2;
+    font-size: 1.3vw;
+}
 
+#address{
+    position: absolute;
+    color: rgb(230, 230, 230);
+    font-size: 1.2vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.2vw;
+    text-shadow: 0vw 0vw 0.5vw rgb(0, 168, 194);
+} #address:hover{color:white;}
 
+#name{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.742);
+    font-size: 1.2vw;
+    margin-top: 5.5vh;
+    margin-left: 3vw;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.1vw;
+    text-shadow: 0vw 0vw 0.5vw rgb(0, 168, 194);
+    
+}
+
+#numSig{
+    position: absolute;
+    color: rgb(230, 230, 230);
+    font-size: 1.3vw;
+    margin-top: 10vh;
+    margin-left: 14vw;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow: 0vw 0vw 1vw rgb(0, 168, 194);
+}
+
+#posi{
+    position: absolute;
+    color: rgb(230, 230, 230);
+    font-size: 1.3vw;
+    margin-top: 15vh;
+    margin-left: 14vw;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow: 0vw 0vw 1vw rgb(0, 168, 194);
+}
+
+#score{
+    position: absolute;
+    color: rgb(230, 230, 230);
+    font-size: 1.3vw;
+    margin-top: 20vh;
+    margin-left: 14vw;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    text-shadow: 0vw 0vw 1vw rgb(0, 168, 194);
+}
+
+#alphaTrad{
+    margin-left: 1vw;
+    height: 7vh;
+    
+}
+ #alphaTrad:hover{background: linear-gradient(0deg, rgb(0, 41, 191, 0.6), rgb(46, 81, 255, 0.6), rgb(0, 41, 191, 0.6), rgb(10, 2, 95, 0.6)); height: 7vh; transition: ease, 0.5s;}
+#alphaLows{
+    margin-left: 12vw;
+    
+
+} #alphaLows:hover{background: linear-gradient(0deg, rgb(0, 41, 191, 0.6), rgb(46, 81, 255, 0.6), rgb(0, 41, 191, 0.6), rgb(10, 2, 95, 0.6)); height: 7vh; transition: ease, 0.5s;}
+
+#alphaOnchain{
+    margin-left: 23vw;
+    
+
+} #alphaOnchain:hover{background: linear-gradient(0deg, rgb(0, 41, 191, 0.6), rgb(46, 81, 255, 0.6), rgb(0, 41, 191, 0.6), rgb(10, 2, 95, 0.6)); height: 7vh; transition: ease, 0.5s;}
+
+#alphaICO{
+    margin-left: 34vw;
+    
+
+} #alphaICO:hover{background: linear-gradient(0deg, rgb(0, 41, 191, 0.6), rgb(46, 81, 255, 0.6), rgb(0, 41, 191, 0.6), rgb(10, 2, 95, 0.6)); height: 7vh; transition: ease, 0.5s;}
+
+.butAlpha {
+    position: absolute;
+    bottom: 0.5vh;
+    width: 10vw;
+    height: 6vh;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 100;
+    border-radius: 0.8vw 0.8vw 0vw 0vw;
+    border-style: none;
+    box-shadow: inset 0vw 0vw 1vw rgb(39 115 253);
+    text-shadow: 0vw 0vw 0.3vw rgb(0, 0, 0);
+    opacity: 100%;
+    background: linear-gradient(0deg, rgb(0, 41, 191, 0.3), rgb(46, 81, 255, 0.3), rgb(0, 41, 191, 0.3), rgb(10, 2, 95, 0.3));
+    bottom: 0;
+} .butAlpha:hover{cursor: pointer;}
+
+#set1 {
+    position: absolute;
+    width: 2.2vw;
+    margin-top: 5.2vh;
+    margin-left: 0.5vw;
+    opacity: 60%;
+} #set1:hover{cursor: pointer; opacity: 100%;}
+
+#newSig {
+    position: absolute;
+    width: 21vw;
+    height: 48vh;
+    margin-top: 26vh;
+    margin-left: 1vw;
+    background-color: #2d2d2e3d;
+    border-radius: 0.5vw;
+}
+
+#titAdd {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 1.5;
+    margin-top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    letter-spacing: 0.3vw;
+    border-radius: 1vw;
+}
+
+#addTradingSignals {
+    position: absolute;
+    display: block;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b8baa00;
+    border-radius: 0.5vw;
+}
+
+#addOnchainSignals{
+    position: absolute;
+    display: none;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b8baa00;
+    border-radius: 0.5vw;
+}
+
+#addLowsSignals{
+    position: absolute;
+    display: none;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b8baa00;
+    border-radius: 0.5vw;
+}
+
+#addIcoSignals{
+    position: absolute;
+    display: none;
+    width: 20vw;
+    height: 40vh;
+    margin-top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8b8baa00;
+    border-radius: 0.5vw;
+}
+
+.input {
+    position: absolute;
+    background-color: #080808;
+    border-style: none;
+    color: white;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+}
+
+#addAsset{
+    margin-top: 1vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#addEntry{
+    margin-top: 6vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#addSl{
+    margin-top: 11vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#addTp{
+    margin-top: 16vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#addMsg{
+    margin-top: 27.5vh;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#long{
+    position: absolute;
+    background-color: #123611;
+    border-style: none;
+    color: white;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    width: 5vw;
+    margin-top: 22vh;
+    margin-left: 3.5vw;
+
+} #long:hover{cursor: pointer; box-shadow: 0vw 0vw 0.5vw rgb(0, 173, 29); background-color: #047c00;}
+
+#short{
+    position: absolute;
+    background-color: #420e0e;
+    border-style: none;
+    color: white;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    width: 5vw;
+    margin-top: 22vh;
+    margin-left: 11.3vw;
+} #short:hover{cursor: pointer; box-shadow: 0vw 0vw 0.5vw rgb(212, 9, 9); background-color: #b30404;}
+
+#addTradBut {
+    position: absolute;
+    background: linear-gradient(0deg, rgb(0, 41, 191, 0.3), rgb(46, 81, 255, 0.3), rgb(0, 41, 191, 0.3), rgb(10, 2, 95, 0.3));
+    border-style: none;
+    color: white;
+    border-radius: 0.5vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.3vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    width: 12vw;
+    margin-top: 33vh;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset 0vw 0vw 1vw rgb(39 115 253);
+} #addTradBut:hover{cursor: pointer; box-shadow: inset 0vw 0vw 1.3vw rgb(39 115 253); background: linear-gradient(0deg, rgb(0, 41, 191, 0.6), rgb(46, 81, 255, 0.6), rgb(0, 41, 191, 0.6), rgb(10, 2, 95, 0.6));}
+
+#setName{
+    position: absolute;
+    display: none;
+    width: 19.2vw;
+    height: 3.7vh;
+    margin-top: 5vh;
+    margin-left: 2.5vw;
+    background-color: #08080800;
+    border-radius: 0.5vw;
+    z-index: 3;
+    padding: 0.2vw;
+}
+
+#changeNameBut{
+    position: absolute;
+    background: linear-gradient(0deg, rgb(0, 41, 191, 0.3), rgb(46, 81, 255, 0.3), rgb(0, 41, 191, 0.3), rgb(10, 2, 95, 0.3));
+    border-style: none;
+    color: white;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1vw;
+    width: 6vw;
+    height: 3.4vh;
+    margin-top: 0vh;
+    margin-left: 16vw;
+    transform: translateX(-50%);
+    box-shadow: inset 0vw 0vw 1vw rgb(39 115 253);
+    z-index: 3;
+}
+
+#changeName{
+    position: absolute;
+    background-color: #282828;
+    border-style: none;
+    color: white;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.3vw;
+    z-index: 3;
+
+}
+
+.list {
+    position: absolute;
+    width: 33vw;
+    height: 74vh;
+    margin-top: 0vh;
+    margin-left: 23vw;
+    background-color: #2d2d2e3d;
+    border-radius: 0.5vw;
+    z-index: 2;
+    color: white;
+}
+
+#tradingSigList {
+    display: block;
+    overflow-y: scroll;
+    direction: ltr;
+}
+
+#onchainSigList {
+    display: none;
+}
+
+#LowSigList {
+    display: none;
+}
+
+#icoSigList {
+    display: none;
+}
+
+.signalTrad{
+    background-color: #131313;
+    box-shadow: inset 0vw 0vw 0.5vw rgb(83 83 83);
+    width: 30vw;
+    height: 15vh;
+    border-radius: 0.5vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    
+} .signalTrad:hover{margin-left: 1.3vw; transition: ease, 1s; box-shadow: inset 0vw 0vw 0.5vw rgb(143, 142, 142);}
+
+.assetS{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 4vw;
+    color:#ffffff;
+    font-size: 1vw;
+    
+}
+
+.entryS{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    color:#ffffff;
+    font-size: 1vw;
+    
+}
+.slS{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 15vw;
+    color:#d26500;
+    font-size: 1vw;
+}
+.tpS{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 20vw;
+    color:#0c8d00;
+    font-size: 1vw;
+    
+}
+
+.dirS{
+    position: absolute;
+    margin-top: 6.5vh;
+    margin-left: 4vw;
+    color:#ffffff;
+    font-size: 1vw;
+    
+}
+
+.assetImg{
+    position: absolute;
+    width: 2vw;
+    margin-top: 2vh;
+    margin-left: 1.5vw;
+}
+
+#tools {
+    position: absolute;
+    width: 3vw;
+    height: 74vh;
+    margin-top: 0vh;
+    right: 1vw;
+    background-color: #2d2d2e3d;
+    border-radius: 0.5vw;
+    z-index: 2;
+    color: white;
+}
+
+#tradData{
+    position: absolute;
+    width: 35vw;
+    height: 23vh;
+    margin-top: 0vh;
+    right: 5vw;
+    background-color: #2d2d2e3d;
+    border-radius: 0.5vw;
+    z-index: 2;
+    color: white;
+}
+
+.toolsImg{
+    width: 2vw;
+    margin-top: 3vh;
+    margin-left: 0.4vw;
+    border-radius: 1vw;
+    box-shadow: 0vw 0vw 0.5vw rgb(0, 0, 0);
+} .toolsImg:hover{cursor: pointer; box-shadow: 0vw 0vw 0.2vw rgb(74, 74, 74);}
+
+#toolsWindow{
+    position: absolute;
+    width: 35vw;
+    height: 49vh;
+    margin-top: 25vh;
+    right: 5vw;
+    background-color: #2d2d2e3d;
+    border-radius: 0.5vw;
+    z-index: 2;
+    color: white;
+}
+
+#windowTool1{
+    right: 0.9vw;
+}
+
+#windowTool3{
+    position: absolute;
+    margin-left: -2vw;
+    margin-top: 1vh;
+    overflow-x: hidden;
+    width: 35vw; 
+    height: 45vh;
+
+}
+
+.windowTool{
+    position: absolute;
+    width: 33vw;
+    height: 32vh;
+    margin-top: 1vh;
+    right: 0vw;
+    background-color: #1616aa00;
+    border-radius: 0.5vw;
+    z-index: 0;
+    color: white;
+}
 
 }
